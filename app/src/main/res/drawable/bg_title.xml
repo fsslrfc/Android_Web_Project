@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <!-- 描边：白色，宽度为2dp -->
+            <stroke
+                android:width="3dp"
+                android:color="@color/main_color" />
+            <!-- 圆角半径，比如10dp -->
+            <corners android:radius="10dp" />
+            <!-- 中间填充为透明 -->
+            <solid android:color="#00000000" />
+        </shape>
+    </item>
+</selector>
