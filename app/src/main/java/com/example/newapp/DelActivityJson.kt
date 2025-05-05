@@ -14,6 +14,11 @@ import okhttp3.Response
 import org.json.JSONObject
 
 class DelActivityJson : Activity() {
+	private var appid = "76758326"
+	private var appsecret = "wHiJ8aaP"
+	private var version = "v63"
+	private var unescape = "1"
+	
 	private lateinit var mTemNow: TextView
 	private lateinit var mWeather: TextView
 	private lateinit var mTemLow: TextView
@@ -22,11 +27,12 @@ class DelActivityJson : Activity() {
 	private lateinit var mWinSpeed: TextView
 	private lateinit var mWinMeter: TextView
 	private lateinit var mAir: TextView
-	private lateinit var mHumidity: TextView
 	private lateinit var mUpdateTime: TextView
 	
+	private lateinit var mHumidity: TextView
 	private lateinit var mOkHttpClient: OkHttpClient
 	private lateinit var mRequest: Request
+	
 	private lateinit var mResponse: Response
 	
 	private var mHandler = object : Handler(Looper.getMainLooper()) {
@@ -53,12 +59,6 @@ class DelActivityJson : Activity() {
 		}
 		
 	}
-	
-	private var appid = "76758326"
-	private var appsecret = "wHiJ8aaP"
-	private var version = "v63"
-	private var unescape = "1"
-	
 	
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
